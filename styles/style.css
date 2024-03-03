@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff5400;
+  --secondary-color: #131318;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+/* Nav bar Related Styles Starts*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0px 0.9rem 0px 0.9rem; */
+  /* background-color: #ccc; */
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-right: 1rem;
+}
+.logo-title {
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo-title > span {
+  color: var(--primary-color);
+}
+
+.nav-container > ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container > ul > li {
+  margin-right: 1rem;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-container > ul > li:first-child {
+  color: var(--primary-color);
+}
+/* Nav bar Related Styles End*/
+/* Banner Related Styles Starts */
+/* .banner {
+  margin-top: 0.8rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-color: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8),
+    rgba(19, 19, 24, 0) 100%
+  );
+  font-size: 3rem;
+  font-weight: 800;
+  background-image: url(../Images/Rectangle\ 5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+.banner {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+/* Banner Related Styles End */
+
+@media screen and (max-width: 30em) {
+  .nav-container {
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
